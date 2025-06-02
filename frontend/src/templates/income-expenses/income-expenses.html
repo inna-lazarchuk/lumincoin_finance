@@ -1,0 +1,35 @@
+    <div class="income-expenses main w-100">
+        <h1 class="main-info-h1 text-md-start text-center">Доходы и расходы</h1>
+        <div class="page-item-actions d-flex">
+            <a href="/income-expense-create"><button type="button" class="btn btn-success me-3">Создать доход</button></a>
+            <a href="/income-expense-create"><button type="button" class="btn btn-danger">Создать расход</button></a>
+        </div>
+        <div class="navigation-times d-flex align-items-center flex-wrap justify-content-center justify-content-xxl-start">
+            <button type="button" class="btn btn-outline-secondary active" role="button" aria-pressed="true" id="buttonToday">Сегодня</button>
+            <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonWeek">Неделя</button>
+            <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonMonth">Месяц</button>
+            <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonYear">Год</button>
+            <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonAll">Все</button>
+            <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonInterval">Интервал</button>
+            <label for="inputFrom">c</label>
+            <input type="date" class="input-from form-control link-secondary" placeholder="Дата" id="inputFrom"></input>
+            <label for="inputTo">по</label>
+            <input type="date" class="input-to form-control link-secondary" placeholder="Дата" id="inputTo"></input>
+        </div>
+        <table class="table text-center overflow-scroll" >
+            <thead>
+            <tr>
+                <th>№ операции</th>
+                <th>Тип</th>
+                <th>Категория</th>
+                <th>Сумма</th>
+                <th>Дата</th>
+                <th>Комментарий</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="recordsIncomeExpenses">
+
+            </tbody>
+        </table>
+    </div>

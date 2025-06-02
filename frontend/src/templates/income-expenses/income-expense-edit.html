@@ -1,0 +1,28 @@
+    <div class="income-expenses-edit main w-100">
+        <h1 class="main-info-h1">Редактирование дохода/расхода</h1>
+        <div class="create-block">
+            <select class="form-select" id="type-select">
+                <option value="income">Доход</option>
+                <option value="expense">Расход</option>
+            </select>
+
+            <select class="form-select" id="category-select">
+
+            </select>
+            <span id="category-select-error" class="error invalid-feedback">Заполните поле</span>
+
+            <input type="number" class="form-control" id="sum" >
+            <span id="sum-error" class="error invalid-feedback">Заполните поле</span>
+
+            <input type="date" class="form-control" id="date" >
+            <span id="date-error" class="error invalid-feedback">Заполните поле</span>
+
+            <input type="text" class="form-control" id="comment" >
+            <span id="comment-error" class="error invalid-feedback">Заполните поле</span>
+
+            <div class="page-item-actions d-flex">
+                <button type="button" class="btn btn-success" id="edit-save">Сохранить</button>
+                <button type="button" class="btn btn-danger" id="edit-cancel">Отмена</button>
+            </div>
+        </div>
+    </div>

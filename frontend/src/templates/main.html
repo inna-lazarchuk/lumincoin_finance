@@ -1,0 +1,46 @@
+<div class="main w-100">
+    <h1 class="main-title text-md-start text-center">Главная</h1>
+    <div class="navigation-times d-flex align-items-center flex-wrap justify-content-center justify-content-xxl-start">
+        <button type="button" class="btn btn-outline-secondary active" role="button" aria-pressed="true"
+                id="buttonToday">Сегодня
+        </button>
+        <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonWeek">
+            Неделя
+        </button>
+        <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonMonth">
+            Месяц
+        </button>
+        <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonYear">Год
+        </button>
+        <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonAll">Все
+        </button>
+        <button type="button" class="btn btn-outline-secondary" role="button" aria-pressed="true" id="buttonInterval">
+            Интервал
+        </button>
+        <label for="inputFrom">c</label>
+        <input type="date" class="input-from form-control link-secondary" placeholder="Дата" id="inputFrom"></input>
+        <label for="inputTo">по</label>
+        <input type="date" class="input-to form-control link-secondary" placeholder="Дата" id="inputTo"></input>
+    </div>
+    <div class="diagrams  d-flex text-center flex-xxl-row flex-column align-items-center justify-content-xxl-between justify-content-center">
+        <div class="income d-flex flex-column mb-xxl-0 mb-5 w-100">
+            <h3>Доходы</h3>
+            <div class="income-block d-flex flex-column w-100">
+                <canvas id="myDiagramIncome" style="width: 100%; height: 100%;">
+
+                </canvas>
+            </div>
+        </div>
+
+        <div class="line d-none d-xxl-block"></div>
+
+        <div class="expenses d-flex flex-column w-100">
+            <h3>Расходы</h3>
+            <div class="expenses-block d-flex flex-column">
+                <canvas id="myDiagramExpenses" style="width: 100%; height: 100%;">
+
+                </canvas>
+            </div>
+        </div>
+    </div>
+</div>
